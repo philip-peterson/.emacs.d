@@ -1,0 +1,7 @@
+elpa/
+.cache/
+ci/emacs-ci
+auto-save-list/
+.lsp-session-v1
+*.elc
+*~
