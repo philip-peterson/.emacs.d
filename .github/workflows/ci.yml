@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  validate:
+    name: Validate Emacs config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Dagger CLI
+        run: |
+          curl -fsSL https://dl.dagger.io/dagger/install.sh | DAGGER_VERSION=0.20.6 sh
+          echo "$PWD/bin" >> $GITHUB_PATH
+
+      - name: Validate
+        run: dagger call validate --source=.
+        working-directory: .dagger
