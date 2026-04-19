@@ -1,5 +1,7 @@
 {
   "name": "emacs-ci",
   "engineVersion": "v0.20.6",
-  "sdk": "go"
+  "sdk": {
+    "source": "go"
+  }
 }

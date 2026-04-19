@@ -3,8 +3,7 @@ package main
 import (
 	"context"
 
-	"dagger.io/dagger"
-	"dagger.io/dagger/dag"
+	"dagger/emacs-ci/internal/dagger"
 )
 
 type EmacsCi struct{}

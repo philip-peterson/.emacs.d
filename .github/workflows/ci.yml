@@ -10,11 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Dagger CLI
-        run: |
-          curl -fsSL https://dl.dagger.io/dagger/install.sh | DAGGER_VERSION=0.20.6 sh
-          echo "$PWD/bin" >> $GITHUB_PATH
-
       - name: Validate
-        run: dagger call validate --source=.
-        working-directory: .dagger
+        uses: dagger/dagger-for-github@v7
+        with:
+          version: "0.20.6"
+          workdir: .dagger
+          args: call validate --source=.
