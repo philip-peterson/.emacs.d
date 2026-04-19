@@ -9,10 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Validate
-        uses: dagger/dagger-for-github@v7
+      - uses: dagger/dagger-for-github@v7
         with:
-          version: "0.20.6"
-          workdir: .dagger
-          args: call validate --source=.
+          version: 0.20.6
+          call: validate --source=.
