@@ -33,12 +33,10 @@ require (
 require (
 	github.com/99designs/gqlgen v0.17.89 // indirect
 	github.com/Khan/genqlient v0.8.1
-	github.com/adrg/xdg v0.5.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/sosodev/duration v1.4.0 // indirect
 	github.com/vektah/gqlparser/v2 v2.5.32
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
