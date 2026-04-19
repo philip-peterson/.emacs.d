@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"dagger/emacs-ci/internal/dagger"
 
+	"dagger.io/dagger"
 	"dagger.io/dagger/dag"
 )
 
